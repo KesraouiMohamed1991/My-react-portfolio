@@ -8,14 +8,12 @@ export default {
     fontFamily: {
       'Poppins': ['Poppins'],
       'body': ['Open Sans'],
-      'Bebas': ['Bebas Neue'],
-      'Georama': ['Georama'],
-      'Oswald': ['Oswald']
+      'OpenSans': ['Open+Sans'],
     },
 
     extend: {
       animation: {
-        'spin-slow': 'spin 4s linear infinite',
+        'spin-slow': 'spin 8s linear infinite',
         'spin-reverse': 'spin-reverse 3s linear infinite',
         'spin-reverse-slow': 'spin-reverse 10s linear infinite',
       },
