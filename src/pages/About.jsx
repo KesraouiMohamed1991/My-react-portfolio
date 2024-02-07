@@ -111,7 +111,8 @@ function About() {
             initial={{ opacity: 0, y: -30, rotate: -20 }}
             whileInView={{ opacity: 1, y: 0, rotate: 0 }}
             transition={{ duration: 0.5, delay: 0.2 * i }}
-            className="px-4 border-indigo-500 border-[0.3px] hover:border-indigo-200 bg-indigo-950 overflow-hidden py-4 flex flex-col items-center rounded-lg text-black"
+            viewport={{ once: true }}
+            className="px-4 mx-8 sm:mx-0 border-indigo-500 border-[0.3px] hover:border-indigo-200 bg-indigo-950 overflow-hidden py-4 flex flex-col items-center rounded-lg text-black"
             key={category}
           >
             <h4 className="border-t text-slate-200 border-violet-400 py-4 text-lg">

@@ -21,7 +21,7 @@ function ProjectPage() {
       id: "1aoaid",
       title: "MistralTips",
       description:
-        "Description for MistralTips project lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. At vero voluptatibus adipisci vel tempora corporis, culpa dignissimos velit voluptatem, tempore dicta ex nisi ut vitae. Aliquam ad corporis incidunt tempora",
+        "I developed this mobile application at the end of my web and mobile developer training. Using React Native, Redux, Node.js with Express, and MongoDB, I created an elegant and responsive interface showcasing bars in Marseille. The application allows users to filter bars according to their preferences and includes an interactive map displaying detailed information about the city's bars.",
       Img: ["/images/mistral.webp", "/images/mistral3.webp"],
       Link: "https://drive.google.com/file/d/1nixzvxt9ygPXHqp26FRhmd-Ovc1enuYb/view?usp=drive_link",
       githubLink: "https://github.com/KesraouiMohamed1991/MistralTips.git",
@@ -29,23 +29,27 @@ function ProjectPage() {
     },
     {
       id: "2dcjndj",
-      title: "SkillHub",
+      title: "Dictionary web site",
       description:
-        "Description for SkillHub project orem Lorem ipsum dolor sit amet consectetur adipisicing elit. At vero voluptatibus adipisci vel tempora corporis, culpa dignissimos velit voluptatem, tempore dicta ex nisi ut vitae. Aliquam ad corporis incidunt tempora",
-      Img: [
-        "/images/skillhub.webp",
-        "/images/skillhub.webp",
-        "/images/skillhub.webp",
+        "During my self-taught coding journey, I developed this website. Using HTML, CSS, JavaScript, Node.js with Express, I crafted an elegant interface. The site allows users to search for words and listen to their audio pronunciation.",
+      Img: ["/images/dictionary1.webp", "/images/dictionary2.webp"],
+
+      Link: "https://frontend-dictionary.vercel.app/",
+      githubLink: "https://github.com/KesraouiMohamed1991/frontend-dictionary",
+      Technology: [
+        htmlIcon,
+        tailwindcssIcon,
+        jsIcon,
+        expressIcon,
+        nodeIcon,
+        vercelIcon,
       ],
-      Link: "/",
-      githubLink: "https://github.com/KesraouiMohamed1991/SkillHub.git",
-      Technology: [reactIcon, vercelIcon, expressIcon, nodeIcon, mongoDbIcon],
     },
     {
       id: "3sdjjdn",
       title: "Photography Portfolio",
       description:
-        "Welcome to the Photography Portfolio project! This project is a React-based web application showcasing photography works in a portfolio format. It integrates react-router-dom for navigation and Framer Motion for animations, providing an engaging user experience.",
+        "I developed this web application using React to showcase my photography portfolio. I crafted a visually appealing and user-friendly interface to display my photographic works elegantly. This application serves as my online portfolio, enabling users to view and explore my photographs, as well as to discover my social media profiles and easily contact me.",
       Img: [
         "/images/photography00001.webp",
         "/images/photography00002.webp",
@@ -59,9 +63,9 @@ function ProjectPage() {
     },
     {
       id: "3sskkjdn",
-      title: "Old Portfolio",
+      title: "Portfolio v-1",
       description:
-        "Welcome to the v-1 Portfolio project! This project is a html css web site showcasing programing works in a portfolio format. It integrates react-router-dom for navigation and Framer Motion for animations, providing an engaging user experience.",
+        "For my version 1 portfolio, crafted with HTML, CSS, JavaScript, and Tailwind CSS, I aimed for a sleek and minimalist design. Leveraging Tailwind CSS for rapid development, I created an intuitive interface to showcase my skills and projects. This portfolio serves as my initial digital presence, highlighting my journey and accomplishments in the realm of web development.",
       Img: [
         "/images/old00004.webp",
         "/images/old00002.webp",
@@ -99,11 +103,6 @@ function ProjectPage() {
               <AnimatedTitle text={project.title} />
             </span>
 
-            {project.id === "2dcjndj" && (
-              <p className="italic text-sm text-amber-400">
-                This project is currently under development.
-              </p>
-            )}
             <motion.p
               initial={{ opacity: 0, y: -100 }}
               animate={{ opacity: 1, y: 0 }}
@@ -150,9 +149,9 @@ function ProjectPage() {
           </div>
 
           <div className="w-full py-16 z-30 flex flex-col sm:flex-row items-center flex-wrap justify-center gap-4 px-8">
-            <Btn url={project.Link} name={"See website"} />
-            <Btn url={project.Link} name={"Go to Home page"} />
-            <Btn url={project.githubLink} name={"See code"} />
+            <Btn url={project.Link} name={"See Website"} />
+            <Btn url={"/"} name={"Go to Home page"} />
+            <Btn url={project.githubLink} name={"See Code"} />
           </div>
         </>
       ) : (

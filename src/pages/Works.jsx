@@ -44,8 +44,8 @@ function Works() {
     },
     {
       id: "2dcjndj",
-      name: "SkillHub",
-      Img: "/images/skillhub.webp",
+      name: "Dictionary web site",
+      Img: "/images/dictionary1.webp",
       Link: "/",
     },
     {
@@ -56,7 +56,7 @@ function Works() {
     },
     {
       id: "3sskkjdn",
-      name: "Old Portfolio",
+      name: "Portfolio v-1",
       Img: "/images/old00004.webp",
       Link: "https://mypotfolio-iota.vercel.app/",
     },

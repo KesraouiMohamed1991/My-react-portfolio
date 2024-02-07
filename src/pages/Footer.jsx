@@ -29,6 +29,7 @@ function Footer() {
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
+        viewport={{ once: true }}
         className="text-white font-semibold selection:bg-purple-500 selection:text-white p-4 w-full text-center  text-3xl sm:text-4xl md:text-5xl px-4 lg:text-6xl"
       >
         <span className="text-transparent bg-clip-text bg-gradient-to-l from-purple-500 via-amber-500 to-slate-50">

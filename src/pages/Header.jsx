@@ -18,7 +18,7 @@ function Header() {
           <Link className="text-white " to={"/"} aria-label="my profile photo">
             {" "}
             <img
-              className="h-16  w-16 rounded-full bg-blue-600 object-cover"
+              className="h-12  w-12 sm:w-16 sm:h-16 rounded-full bg-blue-600 object-cover"
               src="./images/me.webp"
               alt=""
             />
